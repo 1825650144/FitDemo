@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/sv_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="246px"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/army_banner" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_log"
+                android:layout_width="match_parent"
+                android:layout_height="174px"
+                android:layout_below="@id/iv_banner"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="75px"
+                        android:layout_height="75px"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/army_yygh" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8px"
+                        android:text="预约上线"
+                        android:textColor="@color/black_14"
+                        android:textSize="26px" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_healthClassRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="75px"
+                        android:layout_height="75px"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/army_jkjt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8px"
+                        android:text="装备简介"
+                        android:textColor="@color/black_14"
+                        android:textSize="26px" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="75px"
+                        android:layout_height="75px"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/army_jkda" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8px"
+                        android:text="战斗日记"
+                        android:textColor="@color/black_14"
+                        android:textSize="26px" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_splie_00"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/ll_log"
+                android:background="@color/gray_15" />
+
+            <android.support.v4.widget.Space
+                android:id="@+id/s_01"
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:layout_below="@id/v_splie_00" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/s_01">
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_2_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="342px"
+                            android:layout_marginLeft="20px"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/army_jbzc_0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="50px"
+                            android:text="储备自查"
+                            android:textColor="#4273BB"
+                            android:textSize="32px" />
+                    </RelativeLayout>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="28px"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_2_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="342px"
+                            android:layout_marginRight="20px"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/army_znwz_0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="50px"
+                            android:text="在线救援"
+                            android:textColor="#4273BB"
+                            android:textSize="32px" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_2"
+                    android:layout_marginTop="28px"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_2_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="342px"
+                            android:layout_marginLeft="20px"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/army_jkcp_0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="50px"
+                            android:text="火力侦察"
+                            android:textColor="#4273BB"
+                            android:textSize="32px" />
+                    </RelativeLayout>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="28px"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_2_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="342px"
+                            android:layout_marginRight="20px"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/army_yycs_0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="50px"
+                            android:text="弹药补给"
+                            android:textColor="#4273BB"
+                            android:textSize="32px" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_2_5"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/army_301" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="55px"
+                android:src="@mipmap/msg_icon"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
